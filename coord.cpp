@@ -35,7 +35,7 @@ ostream& operator<<(ostream& out, Coord a) {
 }
 
 // Methods
-vector<Coord> Coord::getNeighbors(int height, int width) const {
+vector<Coord> Coord::getNeighbors() const {
   vector<Coord> neighbors;
   int x = getX(), y = getY();
   for (int i = x-1; i <= x+1; i++) {

@@ -21,7 +21,7 @@ class Coord {
     int getY() const;
 
     // Methods
-    vector<Coord> getNeighbors(int height, int width) const;
+    vector<Coord> getNeighbors() const;
 } ;
 
 // Operators
@@ -29,5 +29,8 @@ bool operator==(Coord a, Coord b) ;
 bool operator!=(Coord a, Coord b) ;
 
 ostream& operator<<(ostream& out, Coord a);
+
+// Utilities
+bool isCorrectCoord(int x, int y) ;
 
 #endif

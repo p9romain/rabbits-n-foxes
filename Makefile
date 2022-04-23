@@ -29,11 +29,12 @@ game-test: game.o game-test.o
 
 
 # Headers
-$(OBJ): params.hpp
+$(OBJ): params.hpp doctest.h
 animal.o animal-test.o: animal.hpp
 coord.o coord-test.o: coord.hpp
 grid.o grid-test.o: grid.hpp
 game.o game-test.o: game.hpp
+main.o : params.hpp animal.hpp coord.hpp grid.hpp game.hpp
 
 
 # Utilities
